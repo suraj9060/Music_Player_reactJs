@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import AudioLish from './components/AudioList/AudioLish';
+import FixFooter from './components/fix-footer/FixFooter';
+import Header from './components/Header/Header';
+import SearchInput from './components/SearchInput/SearchInput';
+import Tabs from './components/Tabs/Tabs';
 
 function App() {
+  const [list, setList] = useState(false)
+  const onBackButtonPress = () => {
+    setList(false)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App m-20 app-quote">
+      <Header />
+      <h2>Search the best Music for your choice</h2>
+      <SearchInput />
+      <Tabs />
+      {list && <AudioLish onBackButtonPress={onBackButtonPress} />}
+      {/* <button onClick={() => setList(true)}>btn</button> */}
+      <FixFooter />
     </div>
   );
 }

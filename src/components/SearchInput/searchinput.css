@@ -1,0 +1,22 @@
+.search-input-container{
+    width: 60%;
+    padding: 20px;
+    background-color: #333;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+
+}
+.search-input-container input {
+    width: 70%;
+    padding: 5px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+   color: white;
+   font-size: 18px;
+
+}

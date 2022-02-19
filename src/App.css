@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: black;
+  font-family: 'Poppins',sans-serif;
+  color: wheat;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex{
   display: flex;
-  flex-direction: column;
+}
+.justify-sb{
+
+  justify-content: space-between;
+}
+.justify-evenly{
+  justify-content: space-evenly;
+}
+.align-center{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.bb{
+  box-sizing: border-box;
+}
+/* margin */
+.m-20{
+  margin: 20px;
+}
+.mlr-20{
+  margin: 20px 0;
+}
+.mtb-20{
+  margin: 0 20px;
+}
+.m-10 {
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.mlr-10 {
+  margin: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mtb-10 {
+  margin: 0 10px;
+}
+.m-5 {
+  margin: 5px;
+}
+
+.mlr-5 {
+  margin: 5px 0;
+}
+
+.mtb-5 {
+  margin: 0 5px;
+}
+/* padding */
+.p-20 {
+  padding: 20px;
+}
+
+.plr-20 {
+  padding: 20px 0;
+}
+
+.ptb-20 {
+  padding: 0 20px;
+}
+.p-10 {
+  padding: 10px;
+}
+
+.plr-10 {
+  padding: 10px 0;
+}
+
+.ptb-10 {
+  padding: 0 10px;
+}
+.p-5 {
+  padding: 5px;
+}
+
+.plr-5 {
+  padding: 5px 0;
+}
+
+.ptb-5 {
+  padding: 0 5px;
+}
+.app-quote{
+  font-size: 30px;
+}
+
+li{
+  list-style: none;
+}
+
+.d-visilibity{
+  position: absolute;
+ 
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: -1;
+  
 }
