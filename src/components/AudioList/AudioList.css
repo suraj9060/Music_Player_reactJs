@@ -15,7 +15,12 @@
     height: 40px;
     border-radius: 50%;
     background: gray;
+    overflow: hidden;
 
+}
+.audio-ls-item .audio-img img{
+    width: 40px;
+    height: 40px;
 }
 .audio-info{
    font-size: 18px;

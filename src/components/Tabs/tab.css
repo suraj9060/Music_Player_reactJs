@@ -31,4 +31,13 @@
     height: 120px;
     background: gray;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.content-wrapper{
+    flex-wrap:wrap;
+}
+.content-wrapper .content-item img{
+    width: 120px;
+    height: 120px;
 }
